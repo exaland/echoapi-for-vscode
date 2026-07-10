@@ -1,0 +1,9 @@
+declare module 'exp-mock';
+declare module 'apipost-runtime8';
+declare module 'curl-to-postmanv2';
+declare module 'type-of-is';
+declare module 'remark-admonitions';
+declare module 'mockjs5-pro';
+declare module 'js-yaml';
+declare module 'auto-json-faker';
+declare module 'convert-design-debug';

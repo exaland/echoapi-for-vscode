@@ -1,0 +1,121 @@
+import styled from 'styled-components';
+
+export const VarMentionsWrap = styled.div`
+  font-size: var(--font-size-12);
+  color: var(--font-content-color);
+
+  .related-env-vars {
+    display: flex;
+    position: fixed;
+    z-index: 1101;
+    padding: 16px;
+    min-width: 500px;
+    height: 244px;
+    border-radius: var(--border-radius);
+    text-align: left;
+    background: var(--popover-select-bg-color);
+    box-shadow: 0 4px 8px -4px rgb(16 24 40 / 28%);
+
+    &::after {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      z-index: -1;
+      transform: translateY(-50%) rotate(45deg);
+      width: 8px;
+      height: 8px;
+      background-color: var(--popover-select-bg-color);
+      content: '';
+    }
+
+    .env-vars-list {
+      padding-right: 16px;
+      max-width: 480px;
+      height: 100%;
+      border-right: solid 1px var(--color-border);
+      overflow-y: auto;
+    }
+
+    .env-vars-desc {
+      top: 0;
+      left: 240px;
+      flex: 1;
+      padding: 0 16px;
+      overflow: hidden;
+      font-size: var(--font-size-12);
+      line-height: 20px;
+
+      /* color: var(--font-content-color);; */
+      overflow-y: auto;
+
+      .var-name,
+      .var-value {
+        color: var(--font-light-color);
+        word-break: break-word;
+      }
+
+      /* .desc-title {
+        color: var(--font-content-color);;
+      } */
+    }
+
+    .env-vars-default {
+      display: flex;
+      position: relative;
+      align-items: center;
+      padding: 0 10px;
+      min-width: 168px;
+      height: 28px;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+
+      .default-icon {
+        display: none;
+        margin: 0 0 0 8px;
+        width: 12px;
+        min-width: 12px;
+        height: 12px;
+        border-radius: var(--border-radius);
+        line-height: 12px;
+        text-align: center;
+        background: #3a86ff;
+      }
+
+      &:hover,
+      &.active {
+        background: var(--popover-select-bg-hover-color);
+
+        .default-icon {
+          display: block;
+        }
+
+        .env-vars-desc {
+          display: block;
+        }
+      }
+
+      .default-name {
+        width: 167px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .default-type {
+        margin: 0 10px 0 0;
+        width: 18px;
+        min-width: 18px;
+        height: 18px;
+        border-radius: var(--border-radius);
+        line-height: 18px;
+        text-align: center;
+        color: #fff;
+        background: #3a86ff;
+
+        &.e {
+          background: #3cc071;
+        }
+      }
+    }
+  }
+`;

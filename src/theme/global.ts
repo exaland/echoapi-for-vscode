@@ -1,0 +1,81 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalThemeStyle = createGlobalStyle`
+  :root {
+    --color-primary-opacity:${({ theme }) => theme.token.colorPrimaryOpacity};
+    --color-bg-gray: ${({ theme }) => theme.token.colorBgGray};
+    --color-font-light-hover: ${({ theme }) => theme.token.colorFontLightHover};
+    --color-bg-light-hover: ${({ theme }) => theme.token.colorBgLightHover};
+    --color-dashed: ${({ theme }) => theme.token.colorDashed};
+    --color-bg-page: ${({ theme }) => theme.token.colorBgPage};
+    --color-bg-right: ${({ theme }) => theme.token.colorBgRight};
+    --color-bg-folder: ${({ theme }) => theme.token.colorBgFolder};
+    --header-bg-color: ${({ theme }) => theme.token.headerBgColor};
+    --search-bg-color: ${({ theme }) => theme.token.searchBgColor};
+    --table-header-bg-color: ${({ theme }) => theme.token.tableHeaderBgColor};
+    --search-big-bg-color: ${({ theme }) => theme.token.searchBigBgColor};
+    --search-big-select-color: ${({ theme }) => theme.token.searchBigSelectColor};
+    --color-bg-folder-hover:${({ theme }) => theme.token.colorBgFolderHover};
+    --color-deep-gray: ${({ theme }) => theme.token.colorDeepGray};
+    --select-hover-color: ${({ theme }) => theme.token.selectHoverColor};
+    --form-hover-color:${({ theme }) => theme.token.formHoverColor};
+    --highlight-change-color: ${({ theme }) => theme.token.highlightChangeColor};
+    --divider-color:${({ theme }) => theme.token.dividerColor};
+    --color-border: ${({ theme }) => theme.token.colorBorder};
+    --color-table-border: ${({ theme }) => theme.token.tableColorBorder};
+    --color-header-border: ${({ theme }) => theme.token.colorHeaderBorder};
+    --color-border-light:${({ theme }) => theme.token.colorBorderLight};
+    --icon-color: ${({ theme }) => theme.token.iconColor};
+    --font-title-color: ${({ theme }) => theme.token.fontTitleColor};
+    --font-content-color:${({ theme }) => theme.token.fontContentColor};
+    --font-light-color: ${({ theme }) => theme.token.fontLightColor};
+    --box-shadow-modal-color: ${({ theme }) => theme.token.boxShadowModalColor};
+    --line-height: ${({ theme }) => theme.token.lineHeight};
+    --border-radius: ${({ theme }) => `${theme.token.borderRadius}px`};
+    --color-primary:${({ theme }) => theme.token.colorPrimary};
+    --icon-primary-color: ${({ theme }) => theme.token.iconPrimaryColor};
+    --selected-border-color: ${({ theme }) => theme.token.SelectedBorderColor};
+    --white-color: ${({ theme }) => theme.token.WhiteColor};
+    --popover-select-bg-color: ${({ theme }) => theme.token.popoverSelectBgColor};
+    --popover-select-bg-hover-color: ${({ theme }) => theme.token.popoverSelectBgHoverColor};
+    --color-bg-tree-page: ${({ theme }) => theme.token.colorBgTreePage};
+    --color-white: ${({ theme }) => theme.token.colorWhite};
+    --check-box-border-color: ${({ theme }) => theme.token.checkBoxBorderColor};
+    --color-error: #F92814;
+
+    /* --color-success: #0cbb52; */
+    --color-success: #26cea4;
+    --color-warning: #ffb400;
+    --color-info: #097bed;
+    --color-error-bg: ${({ theme }) => theme.token.colorErrorBg};
+    --color-success-bg: ${({ theme }) => theme.token.colorSuccessBg};
+    --color-warning-bg: ${({ theme }) => theme.token.colorWarningBg};
+    --color-info-bg:${({ theme }) => theme.token.colorInfoBg};
+    --font-size-12:${({ theme }) => `${theme.token.fontSize}px`};
+    --font-size-14:${({ theme }) => `${theme.token.fontSize14}px`};
+    --font-size-16:${({ theme }) => `${theme.token.fontSize / 0.75}px`};
+    --font-size-18:${({ theme }) => `${theme.token.fontSize * 1.5}px`};
+    --font-size-20:${({ theme }) => `${theme.token.fontSize / 0.6}px`};
+    --font-size-24:${({ theme }) => `${theme.token.fontSize * 2}px`};
+    --padding8:${({ theme }) => `${theme.token.padding8}px`};
+    --padding10: ${({ theme }) => `${theme.token.padding10}px`};
+    --padding12: ${({ theme }) => `${theme.token.padding12}px`};
+    --padding14:${({ theme }) => `${theme.token.padding14}px`};
+    --padding16: ${({ theme }) => `${theme.token.padding16}px`};
+    --padding18: ${({ theme }) => `${theme.token.padding18}px`};
+    --padding20:${({ theme }) => `${theme.token.padding20}px`};
+    --margin8: ${({ theme }) => `${theme.token.margin8}px`};
+    --margin10: ${({ theme }) => `${theme.token.margin10}px`};
+    --margin12: ${({ theme }) => `${theme.token.margin12}px`};
+    --margin14: ${({ theme }) => `${theme.token.margin14}px`};
+    --margin16: ${({ theme }) => `${theme.token.margin16}px`};
+    --margin18: ${({ theme }) => `${theme.token.margin18}px`};
+    --margin20: ${({ theme }) => `${theme.token.margin20}px`};
+    --scrollbar-thumb-bg-color: ${({ theme }) => theme.token.scrollbarThumbBgColor};
+    --scrollbar-thumb-hover-bg-color: ${({ theme }) => theme.token.scrollbarThumbHoverBgColor};
+    --modal-content-bg: ${({ theme }) => theme.token.modalContentBg};
+    --modal-mask-bg: ${({ theme }) => theme.token.modalMaskBg};
+  }
+`;
+
+export default GlobalThemeStyle;
